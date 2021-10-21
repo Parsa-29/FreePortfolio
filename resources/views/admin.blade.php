@@ -118,7 +118,7 @@
                                         @csrf
                                         <ul>
                                             <li>
-                                                <p>Your Photo //ყოველი განახლებული ინფორმაციის შემდეგ, გთხოვთ ატვირთოთ ფოტო თავიდან</p>
+                                                <p>Your Photo //ყოველი განახლებული ინფორმაციის შემდეგ, გთხოვთ ატვირთოთ ფოტო თავიდან. //ატვირთეთ ფოტოს სახელი გამოტოვებული (SPACE) ების გარეშე.</p>
                                                 <input name="your_photo" id="your_photo" onchange="loadFile(event)" type="file" >
                                                 <img src="{{$data_value->your_photo}}" width="100px" alt="" id="output">
                                                 <script>
@@ -206,7 +206,7 @@
                                         @csrf
                                         <ul>
                                             <li>
-                                                <p>Portfolio Item Photo</p>
+                                                <p>Portfolio Item Photo //ატვირთეთ ფოტოს სახელი გამოტოვებული (SPACE) ების გარეშე.</p>
                                                 <input name="portfolio_photo" id="your_photo" onchange="loadFile(event)" type="file" >
                                                 {{-- <img src="{{asset('img/slider/default-img.jpg')}}" width="100px" alt="" id="output"> --}}
                                                 <script>

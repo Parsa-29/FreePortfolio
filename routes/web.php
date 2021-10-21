@@ -18,7 +18,7 @@ use App\Http\Controllers\RegisterController;
 
 Route::get('/', function () {
     $data = DB::table('maininfo')->first();
-    $data_portfolio = DB::table('portfolio')->get();
+    $data_portfolio = DB::table('portfolio')->orderBy('created_at', 'DESC')->get();
     return view('index', ['data' => $data, 'data_portfolio' => $data_portfolio]);
 });
 
