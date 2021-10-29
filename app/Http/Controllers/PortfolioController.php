@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class PortfolioController extends Controller
 {
-    function add(Request $request) {
+    function add(Request $request) { 
 
         $query = [
             'portfolio_photo'=>'',
